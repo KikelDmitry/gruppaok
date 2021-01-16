@@ -1,0 +1,56 @@
+.introduction {
+	max-width: 560px;
+	text-align: center;
+
+	&__title {
+		margin: 0 0 70px;
+
+		@include df(425) {
+			margin: 0 0 36px;
+
+		}
+
+		&--lil {
+			display: block;
+			margin: 0 0 30px;
+			font-size: 14px;
+			font-weight: 700;
+			text-transform: uppercase;
+			letter-spacing: 2.5px;
+
+			@include df(768) {
+				font-size: 10px;
+			}
+			@include df(425) {
+				margin: 0 0 30px;
+			}
+		}
+		&--big {
+			display: block;
+			font-size: 52px;
+
+			@include df(768) {
+				font-size: 36px;
+			}
+		}
+	}
+	&__logo {
+		margin: 0 auto 50px;
+	}
+	&__text {
+		font-weight: 300;
+
+		&--first {
+			margin: 0 0 28px;
+			font-size: 36px;
+		}
+		&--second {
+			margin: 0 0 56px;
+			font-size: 16px;
+		}
+		&--third {
+			font-size: 18px;
+			line-height: 1.55;
+		}
+	}
+}
