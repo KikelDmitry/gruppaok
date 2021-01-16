@@ -1,0 +1,73 @@
+:root {
+}
+html {
+	&.modal-open {
+		overflow: hidden;
+	}
+}
+body {
+	background: $color-bg;
+	color: $color-fg;
+	font-family: "Roboto", sans-serif;
+	font-weight: 400;
+	font-size: 16px;
+	line-height: 1;
+	-webkit-font-smoothing: antialiased;
+
+	&.modal-open {
+		overflow: visible;
+	}
+}
+.separ {
+	display: block;
+	max-width: 960px;
+	height: 1px;
+	margin: 100px auto;
+	background: #000;
+	background: linear-gradient(to right, #fff 10%, #000 50%, #fff 90%);
+	border: none;
+	clear: both;
+
+	@include df(768) {
+		margin: 100px auto 60px;
+	}
+}
+.section {
+	max-width: 960px;
+	padding: 0 10px;
+	margin: auto;
+	text-align: center;
+
+	@include df(640) {
+		padding: 0 5px;
+	}
+
+	&--anchor {
+		padding: 100px 10px 0;
+		margin: -100px auto 0;
+
+		@include df(640) {
+			padding: 100px 10px 0;
+		}
+	}
+}
+.blue-btn {
+	display: block;
+	max-width: 200px;
+	padding: 17px 37px;
+	margin: auto;
+	background: #1f5bff;
+	color: #fff;
+	font-size: 16px;
+	font-weight: 700;
+	border: 3px solid #1f5bff;
+	border-radius: 30px;
+	transition-property: color, background-color;
+	transition-duration: 300ms;
+	transition-timing-function: ease-in-out;
+
+	&:hover {
+		color: #1f5bff;
+		background: transparent;
+	}
+}

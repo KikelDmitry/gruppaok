@@ -1,0 +1,11 @@
+section.contacts.section.section--anchor#contacts
+	h2.contacts-title Бронирование концертов
+	.contacts-manager
+		a(href="tel:" + content.contacts.phone) #{content.contacts.phone}
+		div Антон
+	.contacts-socials
+		each item in content.socials
+			a.contacts-socials__link(href=item.url target="_blank" rel="noopener noreferrer nofollow")
+				+svg('contacts-socials__icon ' + item.title.toLowerCase(), 'socials--' + item.title.toLowerCase(), item.title, item.title + ' icon', 42, 42)
+	a.blue-btn.contacts-btm-lnk(href="//vk.com/topic-16907566_38998496" target="_blank" rel="noopener noreferrer") Трек-лист
+	a.blue-btn.contacts-btm-lnk(href="//vk.com/topic-16907566_38998502" target="_blank" rel="noopener noreferrer") Райдер

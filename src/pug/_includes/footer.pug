@@ -1,0 +1,23 @@
+-
+	content.menu.pop();
+	var menu = content.menu
+footer.footer
+	.footer-copy
+		picture
+			source(srcset="/img/ok_logo--footer.webp, /img/ok_logo--footer_x2.png 2x")
+			img.footer-logo(src="/img/ok_logo--footer.png" alt="группа ок лого" loading="lazy")
+		.footer-text
+			h3.footer-title Группа "ОченьКрасивые" © 2020
+			.footer-contacts
+				a(href="tel:" + content.contacts.phone) #{content.contacts.phone}
+	nav.footer-menu
+		each item in menu
+			if item.url.indexOf('//') == -1
+				a.footer-menu__link(href=item.url) #{item.title}
+			else
+				a.footer-menu__link(href=item.url target="_blank" rel="noopener noreferrer nofollow") #{item.title}
+	.footer-right
+		button.js-top.top-btn(type="button")
+			svg(width="50" height="50")
+			use(xlink:href="/img/sprite.svg#arrow-up")
+			span Наверх

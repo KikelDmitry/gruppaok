@@ -1,0 +1,62 @@
+.contacts {
+	margin-bottom: 45px;
+
+	&-title {
+		margin: 0 0 45px;
+		font-size: 42px;
+		font-weight: 300;
+	}
+	&-manager {
+		margin: 0 0 45px;
+		font-size: 26px;
+		font-weight: 300;
+		line-height: 1.5;
+	}
+	&-socials {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		margin: 0 0 45px;
+
+		&__link {
+			width: 60px;
+			height: 60px;
+			flex: 0 0 auto;
+			padding: 9px;
+			margin: 0 15px;
+			background: #000;
+			border-radius: 50%;
+			transition: all 0.5s;
+
+			&:hover {
+				transform: scale(1.4);
+				background: transparent;
+
+				.contacts-socials__icon.vk {
+					fill: $vk-color;
+				}
+				.contacts-socials__icon.youtube {
+					fill: $youtube-color;
+				}
+				.contacts-socials__icon.instagram {
+					fill: $insta-color;
+				}
+			}
+		}
+		&__icon {
+			fill: #fff;
+			transition: inherit;
+		}
+	}
+	&-btm-lnk {
+		margin: 0 auto 30px;
+		background: transparent;
+		color: #1e5bff;
+
+		&:hover {
+			background: #1e5bff;
+			color: #fff;
+
+		}
+	}
+}

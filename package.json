@@ -1,0 +1,32 @@
+{
+	"scripts": {
+		"dev": "gulp dev",
+		"build": "gulp build"
+	},
+	"private": true,
+	"license": "ISC",
+	"devDependencies": {
+		"autoprefixer": "^9.8.6",
+		"browser-sync": "^2.26.13",
+		"del": "^5.1.0",
+		"gulp": "^4.0.2",
+		"gulp-cheerio": "^1.0.0",
+		"gulp-concat": "^2.6.1",
+		"gulp-imagemin": "^7.1.0",
+		"gulp-minify": "^3.1.0",
+		"gulp-postcss": "^8.0.0",
+		"gulp-pug": "^4.0.1",
+		"gulp-sass": "^4.1.0",
+		"gulp-sourcemaps": "^2.6.5",
+		"gulp-svg-sprite": "^1.5.0",
+		"gulp-svgmin": "^2.2.0",
+		"postcss-csso": "^4.0.0"
+	},
+	"browserslist": [
+		"last 2 versions",
+		"not dead"
+	],
+	"dependencies": {
+		"@glidejs/glide": "^3.4.1"
+	}
+}

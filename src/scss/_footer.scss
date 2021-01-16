@@ -1,0 +1,88 @@
+.footer {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	min-height: 150px;
+	padding: 10px;
+	background: #000;
+	color: #fff;
+	
+	&-copy {
+		flex: 1 1 30%;
+		max-width: 30%;
+		display: flex;
+		align-items: center;
+		line-height: 1.2;
+		
+		@include df(768) {
+			max-width: 50%;
+		}
+		picture {
+			flex: 0 0 auto;
+		}
+	}
+	&-title {
+		margin: 0 0 15px;
+	}
+	&-logo {
+		max-height: 65px;
+		padding-right: 20px;
+
+		@include df(425) {
+			display: none;
+		}
+	}
+	&-menu {
+		display: flex;
+		flex-flow: row wrap;
+		justify-content: center;
+		flex: 1 1 auto;
+		text-align: center;
+
+		@include df(1024) {
+			display: flex;
+			flex-flow: column;
+		}
+		@include df(768) {
+			display: none;
+		}
+
+		&__link {
+			padding: 12px 0;
+			margin: 0 15px;
+			font-size: 14px;
+			font-weight: 600;
+
+			&:hover {
+				text-decoration: underline;
+			}
+		}
+	}
+	&-right {
+		flex: 1 1 30%;
+		max-width: 30%;
+		display: flex;
+		justify-content: flex-end;
+		align-items: center;
+
+		@include df(768) {
+			max-width: 50%;
+		}
+	}
+}
+.top-btn {
+	display: block;
+	width: 50px;
+	height: 50px;
+	margin: 0 20px;
+	color: #fff;
+	fill: #fff;
+	font-size: 14px;
+	font-weight: 600;
+	transition: all 0.3s;
+
+	&:hover {
+		color: #1e5bff;
+		fill: #1e5bff;
+	}
+}

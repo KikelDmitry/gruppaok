@@ -1,0 +1,28 @@
+// variables
+
+//mixins
+//desktop first
+@mixin df($size) {
+	@media (max-width: $size + px) {
+		@content;
+	}
+}
+//mobile first
+@mixin mf($size) {
+	@media (min-width: $size + px) {
+		@content;
+	}
+}
+
+//main-colors
+$color-bg: #fff; 
+$color-fg: #000;
+
+//social-colors
+$vk-color: #4a76a8;
+$fb-color: #3b5998;
+$insta-color: #c32aa3;
+$youtube-color: #ff0000;
+$twitter-color: #1da1f2;
+$telegram-color: #2CA5E0;
+$github-color: #000000;

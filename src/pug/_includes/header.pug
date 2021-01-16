@@ -1,0 +1,20 @@
+-
+	var menu = content.menu;
+.top-menu
+	nav.top-menu__nav
+		each item in menu
+			if item.url.indexOf('//') == -1
+				a.top-menu__link(href=item.url) #{item.title}
+			else
+				a.top-menu__link(href=item.url target="_blank" rel="noopener noreferrer nofollow") #{item.title}
+		button.top-menu__back.js-top(type="button" name="to-top-button")
+			+svg('', 'arrow-up', 'Наверх', 'up arrow', 50, 50)
+		.top-menu__social-links
+			each item in content.socials
+				a.top-menu__social-links__link(href=item.url target="_blank" rel="noopener noreferrer nofollow")
+					+svg('', 'socials--' + item.title.toLowerCase(), item.title, item.title + ' icon', 24, 24)
+	button.burger_btn.btn(type="button" aria-label="menu")
+		svg.burger_icon(width="44" height="44" viewBox="0 0 44 44" fill="#000")
+			rect(width="22" height="2" x="11" y="15")
+			rect(width="22" height="2" x="11" y="21")
+			rect(width="22" height="2" x="11" y="27")
