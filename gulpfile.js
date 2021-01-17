@@ -47,7 +47,7 @@ const globs = {
 		config.src + 'js/**/*.js',
 	],
 	images: [
-		config.src + 'img/**/*.{png,jpg,jpeg,svg,gif}',
+		config.src + 'img/**/*.{png,jpg,jpeg,svg,gif,webp}',
 		'!' + config.src + 'img/sprite/**/*.svg'
 	],
 	sprite: config.src + 'img/sprite/**/*.svg',
@@ -129,8 +129,7 @@ const images = () => {
 						{ removeViewBox: true },
 						{ cleanupIDs: false }
 					]
-				})
-
+				}),
 			],
 			verbose: true
 		}))

@@ -1,0 +1,43 @@
+-
+	var faces = [
+		{
+			name: 'Стас Гредасов',
+			position: 'Вокал',
+			photo: 'gredasov_stas',
+		},
+		{
+			name: 'Антон Куркин',
+			position: 'Гитара',
+			photo: 'kurkin_anton',
+		},
+		{
+			name: 'Толик Лазарев',
+			position: 'Тромбон',
+			photo: 'lazarev_anatolii',
+		},
+		{
+			name: 'Женя Караичев',
+			position: 'Барабаны',
+			photo: 'karaichev_evgenii',
+		},
+		{
+			name: 'Максим Глазко',
+			position: 'Труба',
+			photo: 'glazko_maxim',
+		},
+	]
+
+section.faces.section
+	h2.faces__title Приятно познакомиться!
+	.faces__subtitle ОченьКрасивые это:
+	.faces__inner
+		each face in faces
+			figure.faces__item
+				picture.faces__image
+					source(srcset="/img/media/faces/" + face.photo + ".webp, /img/media/faces/" + face.photo + "_x2.jpg 2x")
+					img(src="/img/media/faces/" + face.photo + ".jpg" alt=face.name loading="lazy")
+				figcaption.faces__caption
+					.faces__name #{face.name}
+					.faces__role #{face.position}
+
+	a.blue-btn(href="//instagram.com/gruppaok/" target="_blank" rel="noopener noreferrer nofollow") Instagram

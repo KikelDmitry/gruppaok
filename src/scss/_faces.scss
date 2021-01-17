@@ -1,0 +1,60 @@
+.faces {
+	max-width: 1200px;
+
+	&__inner {
+		display: flex;
+		flex-flow: row wrap;
+		justify-content: center;
+		align-items: flex-start;
+		margin: 0 0 16px;
+		overflow: hidden;
+	}
+	&__title {
+		margin: 0 0 40px;
+		font-size: 42px;
+
+		@include df(768) {
+			font-size: 30px;
+		}
+	}
+	&__subtitle {
+		margin: 0 0 100px;
+		font-size: 20px;
+		font-weight: 300;
+
+		@include df(768) {
+			margin-bottom: 40px;
+		}
+		@include df(640) {
+			margin: 0 12px 40px;
+		}
+	}
+	&__item {
+		float: left;
+		margin: 0 16px 90px;
+
+		@include df(768) {
+			margin-bottom: 40px;
+		}
+		@include df(640) {
+			margin: 0 12px 40px;
+		}
+	}
+	&__image {
+		display: block;
+		max-width: 200px;
+		margin: 0 0 20px;
+		border-radius: 50%;
+		overflow: hidden;
+	}
+	&__name {
+		margin: 0 0 10px;
+		font-size: 20px;
+		font-weight: 700;
+	}
+	&__role {
+		color: #585858;
+		font-size: 12px;
+		font-weight: 300;
+	}
+}

@@ -1,0 +1,92 @@
+-
+	var photos = [
+		{
+			file: 'about_1',
+			alt: 'Группа ок',
+		},
+		{
+			file: 'about_2',
+			alt: 'Глазко',
+		},
+		{
+			file: 'about_3',
+			alt: 'Лазарев',
+		},
+		{
+			file: 'about_4',
+			alt: 'Гредасов',
+		},
+	];
+
+section.about.section.section--anchor#about
+	.about__photo
+		each photo in photos
+			picture.about__photo__item
+				source(srcset="/img/media/about-us/" + photo.file + ".webp, /img/media/about-us/" + photo.file + "_x2.jpg 2x")
+				img(src="/img/media/about-us/" + photo.file + ".jpg" alt=photo.alt loading="lazy")
+	.about__text
+		h2.about__text__title О нас
+		.about__text__remark Мы щедро дарим эмоции на своих выступлениях. Здесь же приведем цифры и факты, чтобы помочь Вам принять взвешенное решение:
+		ul.about__achieves
+			li.about__achieves__item
+				| Только 
+				strong живой звук
+			li.about__achieves__item
+				| Более 
+				strong 5000
+				|  успешных мероприятий
+			li.about__achieves__item
+				strong 10 лет
+				|  на сцене
+			li.about__achieves__item
+				| Более 
+				strong 60000
+				|  просмотров на YouTube
+	-
+		var brands = [
+			{
+				title: 'FIFA',
+				icon: 'fifa',
+			},
+		];
+	.brands
+		h3.brands__title Нам доверяют:
+		.brands__glide.glide
+			.glide__track(data-glide-el="track")
+				ul.glide__slides
+					li.glide__slide
+						svg.brands__slide
+							title FIFA
+							use(xlink:href="/img/sprite.svg#brands--fifa")
+					li.glide__slide
+						svg.brands__slide
+							title Coca Cola
+							use(xlink:href="/img/sprite.svg#brands--coca-cola")
+					li.glide__slide
+						svg.brands__slide
+							title McDonalds
+							use(xlink:href="/img/sprite.svg#brands--mcdonalds")
+					li.glide__slide
+						svg.brands__slide
+							title Сбербанк
+							use(xlink:href="/img/sprite.svg#brands--sberbank")
+					li.glide__slide
+						svg.brands__slide
+							title Мегафон
+							use(xlink:href="/img/sprite.svg#brands--megafon")
+					li.glide__slide
+						svg.brands__slide
+							title Альфа Банк
+							use(xlink:href="/img/sprite.svg#brands--alfa-bank")
+					li.glide__slide
+						svg.brands__slide
+							title TELE2
+							use(xlink:href="/img/sprite.svg#brands--tele2")
+					li.glide__slide
+						svg.brands__slide
+							title ВТБ24
+							use(xlink:href="/img/sprite.svg#brands--vtb24")
+					li.glide__slide
+						svg.brands__slide
+							title Amway
+							use(xlink:href="/img/sprite.svg#brands--amway")
