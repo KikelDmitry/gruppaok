@@ -38,7 +38,7 @@
 	text-align: center;
 	text-transform: uppercase;
 	text-shadow: 1px 1px 2px #000;
-	animation: fadeIn 1.2s 1 linear;
+	animation: fadeIn 1s 1 linear;
 
 	@include df(1024) {
 		font-size: 8.8vw;

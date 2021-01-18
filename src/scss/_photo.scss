@@ -1,0 +1,141 @@
+.photo {
+	max-width: 1200px;
+
+	&__pre-title {
+		margin: 0 0 66px;
+		font-size: 16px;
+		font-weight: 600;
+		text-transform: uppercase;
+		letter-spacing: 2.5px;
+	}
+	&__title {
+		margin: 0 0 58px;
+		font-size: 64px;
+		font-weight: 600;
+
+		span {
+			font-weight: 300;
+		}
+	}
+	&__subtitle {
+		margin: 0 0 170px;
+		font-size: 24px;
+		font-weight: 300;
+	}
+	&__slider {
+		position: relative;
+		margin: 0 0 50px;
+		padding: 0 20px;
+		max-height: 80vh;
+
+		@include df(425) {
+			padding: 0;
+		}
+		&-inner {
+			align-items: center;
+			max-height: inherit;
+		}
+		&-item {
+			max-height: inherit;
+			object-position: center;
+			object-fit: cover;
+
+			img {
+				max-width: 100%;
+				max-height: inherit;
+				margin: auto;
+			}
+		}
+		&-arrow {
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			width: 40px;
+			height: 40px;
+			position: absolute;
+			top: 50%;
+			transform: translateY(-50%);
+			z-index: 20;
+			background: rgba(255, 255, 255, 0.4);
+			border-radius: 50%;
+			transition: background-color 0.3s;
+
+			@include df(425) {
+				top: calc(50% - 16px);
+				width: 32px;
+				height: 32px;
+				background: rgba(255, 255, 255, 0.2);
+				border-radius: 0 4px 4px 0;
+			}
+
+			svg {
+				height: 100%;
+
+				@include df(425) {
+					height: 20px;
+				}
+			}
+			&.arrow-left {
+				left: -26px;
+
+				@include df(1260) {
+					left: 26px;
+				}
+				@include df(425) {
+					left: 0;
+					transform: translate(0);
+				}
+			}
+			&.arrow-right {
+				transform: translateY(-50%) rotateZ(180deg);
+				right: -26px;
+
+				@include df(1260) {
+					right: 26px;
+				}
+				@include df(425) {
+					right: 0;
+					transform: translate(0) rotateZ(180deg);
+				}
+			}
+			&:hover {
+				background-color: rgba(255, 255, 255, 0.7);
+
+				@include df(425) {
+					background: rgba(255, 255, 255, 0.4);
+				}
+			}
+		}
+		.glide-track {
+			max-height: inherit;
+		}
+	}
+	&__masonry {
+		display: flex;
+		flex-flow: row wrap;
+		justify-content: center;
+		margin: 0 0 63px;
+
+		@include df(810) {
+			flex-flow: column nowrap;
+			align-items: center;
+		}
+		&__item {
+			width: 360px;
+			margin: 0 16px 32px;
+
+			&--logo {
+				display: flex;
+				justify-content: center;
+				align-items: center;
+
+				@include df(810) {
+					order: 1;
+				}
+			}
+			@include df(425) {
+				margin: 0 0 16px;
+			}
+		}
+	}
+}

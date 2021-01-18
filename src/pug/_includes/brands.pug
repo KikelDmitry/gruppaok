@@ -1,0 +1,47 @@
+-
+	var brands = [
+		{
+			title: 'FIFA',
+			icon: 'fifa',
+		},
+		{
+			title: 'Coca Cola',
+			icon: 'coca-cola',
+		},
+		{
+			title: 'McDonalds',
+			icon: 'mcdonalds',
+		},
+		{
+			title: 'Сбербанк',
+			icon: 'sberbank',
+		},
+		{
+			title: 'Мегафон',
+			icon: 'megafon',
+		},
+		{
+			title: 'Альфа Банк',
+			icon: 'alfa-bank',
+		},
+		{
+			title: 'TELE2',
+			icon: 'tele2',
+		},
+		{
+			title: 'ВТБ24',
+			icon: 'vtb24',
+		},
+		{
+			title: 'Amway',
+			icon: 'amway',
+		},
+	];
+section.section.brands
+	h3.brands__title Нам доверяют:
+	.brands__glide.glide
+		.glide__track(data-glide-el="track")
+			ul.glide__slides
+				each brand in brands
+					li.glide__slide
+						+svg('brands__slide', 'brands--' + brand.icon, brand.title, '', false, false)

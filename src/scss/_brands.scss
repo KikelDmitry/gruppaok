@@ -1,0 +1,19 @@
+.brands {
+	width: 100%;
+	margin: 30px auto;
+	max-width: 1200px;
+
+	&__title {
+		margin: 0 0 1.5em;
+		font-size: 28px;
+
+	}
+	&__slide {
+		max-width: 100%;
+		max-height: 124px;
+		background: linear-gradient(-45deg, rgba(240, 240, 240, 0.8), #fff, rgba(240, 240, 240, 0.8));
+		border-radius: 6px;
+		padding: 20px;
+
+	}
+}

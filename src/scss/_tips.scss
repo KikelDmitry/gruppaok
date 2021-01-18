@@ -1,0 +1,129 @@
+.tips {
+	max-width: 1200px;
+
+	&-title__cont {
+		display: flex;
+		margin: 0 0 90px;
+		text-align: left;
+		line-height: 1.5;
+
+		@include df(768) {
+			flex-wrap: wrap;
+			margin: 0 0 45px;
+		}
+	}
+	&-title {
+		flex: 1 0 360px;
+		padding: 20px 0 0;
+		margin: 0 40px 0 0;
+		border-top: 4px solid #000;
+
+		@include df(768) {
+			width: 100%;
+			padding: 0;
+			margin: 0 0 15px;
+			text-align: center;
+			border: none;
+		}
+		@include df(640) {
+			flex: 0 1 auto;
+		}
+		&-cen {
+			margin: 0 0 40px;
+			font-size: 42px;
+			line-height: 1.23;
+
+			@include df(640) {
+				font-size: 32px;
+			}
+			@include df(360) {
+				font-size: 28px;
+			}
+		}
+	}
+	&-subtitle {
+		font-size: 20px;
+		font-weight: 300;
+
+		&-cen {
+			margin: 0 0 90px;
+			font-size: 24px;
+			font-weight: 300;
+			line-height: 1.5;
+			text-transform: lowercase;
+
+			@include df(768) {
+				margin: 0 0 30px;
+			}
+			@include df(640) {
+				font-size: 32px;
+			}
+		}
+	}
+}
+.tip-item {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin: 0 0 120px;
+
+	@include df(768) {
+		align-items: flex-start;
+		margin: 0 0 60px;
+	}
+	@include df(640) {
+		flex-wrap: wrap;
+	}
+	&:nth-child(even) {
+		flex-direction: row-reverse;
+
+		.tip-item__text {
+			padding: 0 40px 0 0;
+			text-align: right;
+
+			@include df(768) {
+				padding: 0 20px 0 0;
+			}
+			@include df(640) {
+				padding: 20px 0 0 0px;
+				text-align: left;
+			}
+		}
+	}
+	&__img {
+		flex: 1 0 320px;
+		max-width: 50%;
+
+		@include df(640) {
+			max-width: 100%;
+		}
+	}
+	&__text {
+		flex: 0 1 auto;
+		max-width: 50%;
+		padding: 0 0 0 40px;
+		text-align: left;
+
+		@include df(768) {
+			padding: 0 0 0 20px;
+		}
+		@include df(640) {
+			max-width: 100%;
+			padding: 20px 0 0 0px;
+		}
+	}
+	&__title {
+		margin: 0 0 24px;
+		font-size: 26px;
+		line-height: 1.23;
+
+		@include df(640) {
+			font-size: 24px;
+		}
+	}
+	&__descr {
+		font-size: 18px;
+		font-weight: 300;
+		line-height: 1.55;
+	}
+}

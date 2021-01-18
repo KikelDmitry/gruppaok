@@ -196,7 +196,7 @@ exports.build = series(
 			pug,
 		),
 		scripts,
-		svgsprite,
+		// svgsprite,
 		images,
 		fonts
 	)

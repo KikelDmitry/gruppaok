@@ -1,0 +1,27 @@
+-
+	var videos = [
+		{
+			id: 'll9eLf6oJ8g',
+			title: 'Теле2 онлайн концерт',
+		},
+		{
+			id: 'Ih9akTOTd0E',
+			title: 'Группа ОченьКрасивые - Промо 2019',
+		},
+		{
+			id: 'GPLv3vWU1uw',
+			title: 'Группа ОченьКрасивые - Главная сцена',
+		},
+		{
+			id: 'zbZRv8ns7BY',
+			title: 'Группа ОченьКрасивые - Trombone Shorty',
+		},
+	]
+section.video.section.section--anchor#video
+	.video__pre-title--0 Хочешь увидеть больше?
+	.video__pre-title--1 Тогда смотри
+	h2.video__title Наши Видео
+	.video__subtitle Здесь можно услышать наши аранжировки всем известных песен, мнения знаменитостей о том, что мы делаем, а так же увидеть нашу преданность сцене
+	each video in videos
+		.video__item
+			iframe(src="https://www.youtube.com/embed/" + video.id allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen="" title=video.title loading="lazy")

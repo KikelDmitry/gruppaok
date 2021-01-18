@@ -24,7 +24,8 @@
 	},
 	"browserslist": [
 		"last 2 versions",
-		"not dead"
+		"not dead",
+		"not IE 11"
 	],
 	"dependencies": {
 		"@glidejs/glide": "^3.4.1"
