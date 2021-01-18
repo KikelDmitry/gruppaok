@@ -25,9 +25,8 @@
 	&__slider {
 		position: relative;
 		margin: 0 0 50px;
-		padding: 0 20px;
-		max-height: 80vh;
-
+		// padding: 0 20px;
+		
 		@include df(425) {
 			padding: 0;
 		}
@@ -36,9 +35,7 @@
 			max-height: inherit;
 		}
 		&-item {
-			max-height: inherit;
-			object-position: center;
-			object-fit: cover;
+			max-height: 80vh;
 
 			img {
 				max-width: 100%;
