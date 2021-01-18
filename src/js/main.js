@@ -37,7 +37,7 @@ function menuOn() {
 	burger.classList.add('is-active');
 	menu.classList.add('is-active');
 	menuWrap.classList.add('is-active');
-	menuWrap.setAttribute('aria-hidden', 'false'); 
+	menuWrap.setAttribute('aria-hidden', 'false');
 	mLayerOn();
 }
 function menuOff() {

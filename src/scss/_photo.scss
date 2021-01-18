@@ -25,7 +25,7 @@
 	&__slider {
 		position: relative;
 		margin: 0 0 50px;
-		// padding: 0 20px;
+		padding: 0 20px;
 		
 		@include df(425) {
 			padding: 0;
@@ -35,10 +35,10 @@
 			max-height: inherit;
 		}
 		&-item {
+			display: flex;
 			max-height: 80vh;
 
 			img {
-				max-width: 100%;
 				max-height: inherit;
 				margin: auto;
 			}
