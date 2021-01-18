@@ -48,10 +48,13 @@ const globs = {
 	],
 	images: [
 		config.src + 'img/**/*.{png,jpg,jpeg,svg,gif,webp}',
-		'!' + config.src + 'img/sprite/**/*.svg'
+		'!' + config.src + 'img/sprite.svg'
 	],
 	sprite: config.src + 'img/sprite/**/*.svg',
-	fonts: config.src + 'fonts/**/*.*',
+	copy: [
+		config.src + 'fonts/**/*.*',
+		config.src + 'img/sprite.svg',
+	],
 }
 
 //server
@@ -165,9 +168,11 @@ const svgsprite = () => {
 };
 exports.svgsprite = svgsprite;
 
-const fonts = () => {
-	return src(globs.fonts)
-		.pipe(dest(config.dest + 'fonts'))
+const copy = () => {
+	return src(globs.copy, {
+		base: config.src
+	})
+		.pipe(dest(config.dest))
 };
 
 const watcher = () => {
@@ -198,7 +203,7 @@ exports.build = series(
 		scripts,
 		// svgsprite,
 		images,
-		fonts
+		copy
 	)
 );
 
