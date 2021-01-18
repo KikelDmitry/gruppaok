@@ -52,8 +52,8 @@ section.photo.section.section--anchor#photo
 		each item in masonry
 			if item.file == 'ok_logo'
 				picture.photo__masonry__item.photo__masonry__item--logo
-					source(srcset="/img/" + item.file + ".webp, /img/" + item.file + "_x2.jpg 2x" loading="lazy")
-					img(src="/img/" + item.file + ".jpg" alt=item.alt loading="lazy")
+					source(srcset="/img/" + item.file + ".webp, /img/" + item.file + "_x2.png 2x" loading="lazy")
+					img(src="/img/" + item.file + ".png" alt=item.alt loading="lazy")
 			else
 				picture.photo__masonry__item
 					source(srcset="/img/media/gallery/masonry/" + item.file + ".webp, /img/media/gallery/masonry/" + item.file + "_x2.jpg 2x" loading="lazy")
