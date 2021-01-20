@@ -18,6 +18,5 @@ footer.footer
 				a.footer-menu__link(href=item.url target="_blank" rel="noopener noreferrer nofollow") #{item.title}
 	.footer-right
 		button.js-top.top-btn(type="button")
-			svg(width="50" height="50")
-			use(xlink:href="/img/sprite.svg#arrow-up")
+			+svg('', 'arrow-up', 'Наверх', 'Стрелка вверх', 50, 50)
 			span Наверх

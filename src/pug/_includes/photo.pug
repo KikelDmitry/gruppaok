@@ -2,7 +2,7 @@
 section.photo.section.section--anchor#photo
 	.photo__pre-title Поехали дальше
 	h2.photo__title Наши Фото 
-		span (2019)
+		//- span (2019)
 	.photo__subtitle Скромная подборка фотографий поможет Вам больше узнать о нас
 	.photo__slider
 		.glide__track(data-glide-el="track")
@@ -52,10 +52,10 @@ section.photo.section.section--anchor#photo
 		each item in masonry
 			if item.file == 'ok_logo'
 				picture.photo__masonry__item.photo__masonry__item--logo
-					source(srcset="/img/" + item.file + ".webp, /img/" + item.file + "_x2.png 2x" loading="lazy")
+					source(srcset="/img/" + item.file + ".webp, /img/" + item.file + "_x2.png 2x")
 					img(src="/img/" + item.file + ".png" alt=item.alt loading="lazy")
 			else
 				picture.photo__masonry__item
-					source(srcset="/img/media/gallery/masonry/" + item.file + ".webp, /img/media/gallery/masonry/" + item.file + "_x2.jpg 2x" loading="lazy")
+					source(srcset="/img/media/gallery/masonry/" + item.file + ".webp, /img/media/gallery/masonry/" + item.file + "_x2.jpg 2x")
 					img(src="/img/media/gallery/masonry/" + item.file + ".jpg" alt=item.alt loading="lazy")
 			

@@ -51,10 +51,10 @@
 	&-btm-lnk {
 		margin: 0 auto 30px;
 		background: transparent;
-		color: #1e5bff;
+		color: $color-blue;
 
 		&:hover {
-			background: #1e5bff;
+			background: $color-blue;
 			color: #fff;
 
 		}

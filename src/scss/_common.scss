@@ -71,3 +71,9 @@ body {
 		background: transparent;
 	}
 }
+picture,
+.photo__slider-item {
+	background-image: url('/img/preloader.svg');
+	background-position: center center;
+	background-repeat: no-repeat;
+}

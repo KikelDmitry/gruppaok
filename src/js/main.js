@@ -88,7 +88,6 @@ new Glide('.brands__glide', {
 
 new Glide('.photo__slider', {
 	type: 'carousel',
-	width: 500
 }).mount();
 
 //totop

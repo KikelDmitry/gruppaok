@@ -76,13 +76,12 @@
 	height: 50px;
 	margin: 0 20px;
 	color: #fff;
-	fill: #fff;
+	fill: currentColor;
 	font-size: 14px;
 	font-weight: 600;
 	transition: all 0.3s;
 
 	&:hover {
-		color: #1e5bff;
-		fill: #1e5bff;
+		color: $color-blue;
 	}
 }
