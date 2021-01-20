@@ -12,10 +12,7 @@ footer.footer
 				a(href="tel:" + content.contacts.phone) #{content.contacts.phone}
 	nav.footer-menu
 		each item in menu
-			if item.url.indexOf('//') == -1
-				a.footer-menu__link(href=item.url) #{item.title}
-			else
-				a.footer-menu__link(href=item.url target="_blank" rel="noopener noreferrer nofollow") #{item.title}
+			a.footer-menu__link(href=item.url rel=(item.url.indexOf('//') == -1 ? false : "noopener noreferrer nofollow")) #{item.title}
 	.footer-right
 		button.js-top.top-btn(type="button")
 			+svg('', 'arrow-up', 'Наверх', 'Стрелка вверх', 50, 50)

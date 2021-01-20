@@ -134,6 +134,7 @@
 			top: 5px;
 			right: 5px;
 			z-index: 9991;
+			color: $color-blue;
 			border-radius: 50%;
 			transition: transform 300ms ease-in-out, opacity 300ms ease-in-out;
 		}
@@ -161,7 +162,7 @@
 		@include df(768) {
 			transition: inherit;
 			display: block;
-			fill: $color-blue;
+			fill: currentColor;
 		}
 	}
 }
