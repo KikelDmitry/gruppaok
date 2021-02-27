@@ -15,11 +15,7 @@ function mLayerOff() {
 	body.classList.remove('modal-open');
 }
 
-mLayer.addEventListener('click', function (e) {
-	if (e.target == this) {
-		mClose();
-	}
-});
+
 
 function mClose() {
 	mLayerOff();
@@ -28,7 +24,7 @@ function mClose() {
 	menuWrap.classList.remove('modal-open');
 }
 
-// menu open
+// mobile menu
 const burger = document.querySelector('.burger_btn'),
 	menuWrap = document.querySelector('.top-menu'),
 	menu = document.querySelector('.top-menu__nav'),
@@ -56,6 +52,12 @@ burger.addEventListener('click', function () {
 });
 menuLink.forEach(function (item) {
 	item.addEventListener('click', menuOff);
+});
+menuWrap.addEventListener('click', function (e) {
+	console.log(e.target)
+	if (e.target == this) {
+		menuOff()
+	}
 });
 
 //brands slider
