@@ -91,19 +91,19 @@ new Glide('.photo__slider', {
 }).mount();
 
 //totop
-const topBtn = document.querySelectorAll('.js-top');
-topBtn.forEach(function (butElem) {
-	butElem.addEventListener('click', toTop);
-});
-function toTop() { //smooth scroll
-	const scrollStep = document.body.scrollHeight / 100;
-	if (window.pageYOffset > 0) {
-		window.scrollBy(0, -(scrollStep));
-		setTimeout(toTop, 0);
-	} else {
-		return false
-	}
-};
+// const topBtn = document.querySelectorAll('.js-top');
+// topBtn.forEach(function (butElem) {
+// 	butElem.addEventListener('click', toTop);
+// });
+// function toTop() { //smooth scroll
+// 	const scrollStep = document.body.scrollHeight / 100;
+// 	if (window.pageYOffset > 0) {
+// 		window.scrollBy(0, -(scrollStep));
+// 		setTimeout(toTop, 0);
+// 	} else {
+// 		return false
+// 	}
+// };
 function btnAppear() {
 	const topMenu = document.querySelector('.top-menu');
 	if (window.pageYOffset > window.innerHeight) {

@@ -3,7 +3,7 @@ header.top-menu
 	nav.top-menu__nav
 		each item in menu
 			a.top-menu__link(href=item.url rel=(item.url.indexOf('//') == -1 ? false : "noopener noreferrer nofollow")) #{item.title}
-		button.top-menu__back.js-top(type="button" name="to-top-button")
+		a.top-menu__back(href="#hero")
 			+svg('', 'arrow-up', 'Наверх', 'up arrow', 50, 50)
 		.top-menu__social-links
 			each item in content.socials

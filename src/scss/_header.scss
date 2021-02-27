@@ -126,6 +126,8 @@
 }
 .burger {
 	&_btn {
+		border-radius: 50%;
+		box-shadow: 0 0 10px rgba(0, 0, 0, 0.25);
 		display: none;
 
 		@include df(768) {
@@ -145,7 +147,7 @@
 			.burger_icon rect {
 				transition: inherit;
 				transform-origin: center;
-				
+
 				&:nth-child(1) {
 					transform: translate(-4px, 4px) rotateZ(45deg);
 				}

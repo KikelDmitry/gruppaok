@@ -14,6 +14,6 @@ footer.footer
 		each item in menu
 			a.footer-menu__link(href=item.url rel=(item.url.indexOf('//') == -1 ? false : "noopener noreferrer nofollow")) #{item.title}
 	.footer-right
-		button.js-top.top-btn(type="button")
+		a.top-btn(href="#hero")
 			+svg('', 'arrow-up', 'Наверх', 'Стрелка вверх', 50, 50)
 			span Наверх

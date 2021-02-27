@@ -1,6 +1,8 @@
 :root {
 }
 html {
+	scroll-behavior: smooth;
+	
 	&.modal-open {
 		overflow: hidden;
 	}

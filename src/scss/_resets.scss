@@ -7,8 +7,6 @@
 }
 body {
 	margin: 0;
-	scroll-behavior: smooth;
-	text-rendering: optimizeSpeed;
 	line-height: 1.5;
 }
 a {
@@ -59,7 +57,7 @@ button {
 	}
 	&:focus {
 		outline: 0;
-		box-shadow: 0 0 0 1px rgba(30, 91, 255, 0.6);
+		box-shadow: 0 0 0 1px $color-pink;
 	}
 }
 .visually-hidden {
