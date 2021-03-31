@@ -58,18 +58,18 @@ body {
 	max-width: 200px;
 	padding: 17px 37px;
 	margin: auto;
-	background: $color-pink;
+	background: $color-blue;
 	color: #fff;
 	font-size: 16px;
 	font-weight: 700;
-	border: 3px solid $color-pink;
+	border: 3px solid $color-blue;
 	border-radius: 30px;
 	transition-property: color, background-color;
 	transition-duration: 300ms;
 	transition-timing-function: ease-in-out;
 
 	&:hover {
-		color: $color-pink;
+		color: $color-blue;
 		background: transparent;
 	}
 }
