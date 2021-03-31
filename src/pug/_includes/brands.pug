@@ -44,4 +44,11 @@ section.section.brands
 			ul.glide__slides
 				each brand in brands
 					li.glide__slide
-						+svg('brands__slide', 'brands--' + brand.icon, brand.title, '', false, false)
+						+svg(
+							'brands__slide',
+							'brands--' + brand.icon,
+							brand.title,
+							'',
+							false,
+							false
+							)
