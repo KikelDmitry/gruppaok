@@ -1,6 +1,56 @@
 extends _layout/base.pug
 
 block meta
+	-
+		var content = {
+			contacts: {
+				phone: '+7 (988) 545-03-73',
+			},
+			socials: [
+				{
+					title: 'VK',
+					url: '//vk.com/o_ok_k',
+				},
+				{
+					title: 'Youtube',
+					url: '//youtube.com/user/gruppaok/',
+				},
+				{
+					title: 'Instagram',
+					url: '//instagram.com/gruppaok/',
+				},
+			],
+			menu: [
+				{
+					title: 'О нас',
+					url: '#about',
+				},
+				{
+					title: 'Фото',
+					url: '#photo',
+				},
+				{
+					title: 'Видео',
+					url: '#video',
+				},
+				{
+					title: 'Советы',
+					url: '#tips',
+				},
+				{
+					title: 'Трек-лист',
+					url: '//vk.com/topic-16907566_38998496',
+				},
+				{
+					title: 'Райдер',
+					url: '//vk.com/topic-16907566_38998502',
+				},
+				{
+					title: 'Контакты',
+					url: '#contacts',
+				},
+			]
+		}
 
 block content
 	include _includes/hero.pug

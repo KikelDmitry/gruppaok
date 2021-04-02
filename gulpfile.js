@@ -54,6 +54,7 @@ const globs = {
 	copy: [
 		config.src + 'fonts/**/*.*',
 		config.src + 'img/sprite.svg',
+		config.src + 'robots.txt'
 	],
 }
 
