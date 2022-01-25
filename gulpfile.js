@@ -13,7 +13,7 @@ const del = require('del');
 const gulpPug = require('gulp-pug');
 
 // css
-const gulpSass = require('gulp-sass');
+const gulpSass = require('gulp-sass')(require('sass'));
 const postcss = require('gulp-postcss');
 const autoprefixer = require('autoprefixer');
 const csso = require('postcss-csso');
