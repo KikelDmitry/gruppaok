@@ -13,11 +13,13 @@ section.photo.section.section--anchor#photo
 						img(src="/img/media/gallery/ok-photo-gallery-" + slide + ".jpg" alt="группа ок фото" loading="lazy")
 					- slide++
 		div(data-glide-el="controls")
-			button.photo__slider-arrow.arrow-left(type="button" data-glide-dir="<" name="arrow-left")
+			button.photo__slider-arrow.arrow-left(type="button" data-glide-dir="<")
+				span.visually-hidden Влево
 				svg(width="12" height="20")
 					desc arrow left
 					use(xlink:href="/img/sprite.svg#arrow-left")
-			button.photo__slider-arrow.arrow-right(type="button" data-glide-dir=">" name="arrow-right")
+			button.photo__slider-arrow.arrow-right(type="button" data-glide-dir=">")
+				span.visually-hidden Вправо
 				svg(width="12" height="20")
 					desc arrow right
 					use(xlink:href="/img/sprite.svg#arrow-left")
