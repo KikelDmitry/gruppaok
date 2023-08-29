@@ -20,7 +20,7 @@
 	&__subtitle {
 		margin: 0 0 100px;
 		font-size: 20px;
-		font-weight: 300;
+		font-weight: 100;
 
 		@include df(768) {
 			margin-bottom: 40px;
@@ -55,6 +55,6 @@
 	&__role {
 		color: #585858;
 		font-size: 12px;
-		font-weight: 300;
+		font-weight: 100;
 	}
 }
