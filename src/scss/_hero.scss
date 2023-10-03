@@ -2,6 +2,7 @@
 	position: relative;
 	width: 100%;
 	height: 100vh;
+	height: 100dvh;
 	overflow: hidden;
 	background-color: #000;
 	background-image: url(/img/media/banner.png);
@@ -9,7 +10,7 @@
 	background-position: center center;
 	background-repeat: no-repeat;
 	background-attachment: fixed;
-	
+
 }
 .main-title {
 	text-indent: 9999px;
