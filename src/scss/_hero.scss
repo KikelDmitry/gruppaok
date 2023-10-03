@@ -9,10 +9,7 @@
 	background-position: center center;
 	background-repeat: no-repeat;
 	background-attachment: fixed;
-
-	@include df(768) {
-		background-attachment: scroll;
-	}
+	
 }
 .main-title {
 	text-indent: 9999px;
