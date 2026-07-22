@@ -25,4 +25,4 @@ jobs:
       - run: npm ci
       - run: npm run build
       # Deploy
-      - run: cd build && rsync -e "ssh -i $HOME/.ssh/key -o StrictHostKeyChecking=no -p 777" --exclude=dev --delete --archive --compress . renton@kikel.net:~/www/kikel.net/
+      - run: cd build && rsync -e "ssh -i $HOME/.ssh/key -o StrictHostKeyChecking=no -p 777" --exclude=dev --delete --archive --compress . renton@kikel.net:~/www/gruppaok.ru/
