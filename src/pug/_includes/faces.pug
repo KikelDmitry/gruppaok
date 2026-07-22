@@ -35,7 +35,7 @@ section.faces.section
 			figure.faces__item
 				picture.faces__image
 					source(srcset="/img/media/faces/" + face.photo + ".webp, /img/media/faces/" + face.photo + "_x2.jpg 2x")
-					img(src="/img/media/faces/" + face.photo + ".jpg" alt=face.name loading="lazy")
+					img(src="/img/media/faces/" + face.photo + ".jpg" alt=face.name width="200" height="200" loading="lazy")
 				figcaption.faces__caption
 					.faces__name #{face.name}
 					.faces__role #{face.position}
