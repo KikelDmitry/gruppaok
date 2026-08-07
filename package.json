@@ -20,7 +20,7 @@
 		"gulp-sourcemaps": "^3.0.0",
 		"gulp-svg-sprite": "^1.5.0",
 		"gulp-svgmin": "^4.1.0",
-		"postcss": "^8.4.31",
+		"postcss": "^8.5.23",
 		"postcss-csso": "^6.0.1",
 		"sass": "^1.68.0"
 	},
